@@ -12,7 +12,10 @@ Topik Halaman Saya: Koleksi Foto Perjalanan Saya.
 - Dua Bagian Utama: Riwayat Perjalanan, Formulir Catat Perjalanan Baru
 - Kolom Tabel: Destinasi, Tahun, Teman Perjalanan, Lama Linggal
 - Kolom Form: Nama Tempat, Tahun, Teman Perjalanan, Lama Tinggal
-- Gambar: foto-bali.webp
+- Gambar: Bali.jpg
+Bali 2.jpg
+Yogyakarta.jpg
+Yogyakarta 2.jpg
 
 # Catatan Penggunaan AI
 
