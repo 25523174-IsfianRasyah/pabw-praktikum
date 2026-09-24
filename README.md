@@ -6,7 +6,7 @@ Berbasis Web, satu folder untuk setiap pertemuan
 
 Topik Halaman Saya: Koleksi Foto Perjalanan Saya.
 
-- Judul halaman: Foto Perjalanan Saya
+- Judul halaman: Koleksi Foto Perjalanan Saya
 - Deskripsi: Dokumentasi dan catatan ringkas dari berbagai Destinasi Indah yang pernah saya kunjungi
 - Tautan Navigasi: Beranda, Galeri Foto, Tambah Perjalanan
 - Dua Bagian Utama: Riwayat Perjalanan, Formulir Catat Perjalanan Baru
