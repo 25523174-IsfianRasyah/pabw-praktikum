@@ -18,4 +18,4 @@ Yogyakarta.jpg
 Yogyakarta 2.jpg
 
 # Catatan Penggunaan AI
-
+Alhamdulillah saya tidak menggunakan bantuin ai untuk code nya karena sudah tersedia di worksheet tinggal copy dan paste sehingga tidak perlu bantuan ai
