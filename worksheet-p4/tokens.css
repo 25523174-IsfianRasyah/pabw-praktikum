@@ -3,7 +3,7 @@
   --cool-steel:  #87919E;
   --blue-500:  #2563EB;
   --pale-sky:   #CDE6F5;
-  --ash-brown:  #554640;
+  --black:  #000000;
  
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -23,8 +23,8 @@
 /* LAPIS 2 — semantik: peran. Isinya mengacu ke lapis 1. */
 :root {
   --color-bg:       var(--pale-sky);
-  --color-fg:       var(--ash-brown);
-  --color-surface:  #8DA7BE;
+  --color-fg:       var(--black);
+  --color-surface:  #ffffff;
   --color-border:   #707078;
   --color-primary:  var(--cool-steel);
   --color-danger:   #B00020;
