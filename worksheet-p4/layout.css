@@ -62,10 +62,6 @@ footer {
 /* JANGAN seperti ini — pengguna papan ketik kehilangan jejak */
 /* *:focus { outline: none; } */
 
-
-/* SALAH — form tampak merah padahal pengguna belum menyentuhnya */
-input:invalid { border-color: var(--color-danger); }
- 
 /* BENAR — hanya setelah pengguna mengetik sesuatu yang tidak sah */
 input:user-invalid {
   border-color: var(--color-danger);
