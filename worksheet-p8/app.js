@@ -9,3 +9,12 @@ const profil = {
 
 const kalimatIdentitas = `Halo, nama saya ${profil.nama} atau biasa dipanggil ${profil.namaPanggilan}. Saya seorang ${profil.peran} dengan NIM ${profil.nim}. Saya sedang belajar tentang ${profil.keahlian.join(", ")}. Jika Anda ingin menghubungi saya, silakan kirim email ke ${profil.email}.`;
 console.log(kalimatIdentitas);
+
+function buatPerkenalan({nama, peran}) {
+    return `Halo, nama saya ${nama}. Saya seorang ${peran}.`;
+}
+
+const formatKeahlian = (daftar) => daftar.join(" . ");
+
+console.log(buatPerkenalan(profil));
+console.log(`Keahlian saya: ${formatKeahlian(profil.keahlian)}`);
