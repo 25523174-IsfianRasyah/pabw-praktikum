@@ -1,9 +1,46 @@
-.form-kolom {
+.navigasi {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);          /* jarak label ke isian, seragam */
+  gap: var(--space-3);
+} 
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
 }
+
+@media (min-width: 768px) {
+  .navigasi { 
+    flex-direction: row; 
+    justify-content: space-between; /* sumbu utama: judul kiri, menu kanan */
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .form-kolom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);          /* jarak label ke isian, seragam */
+  }
+
  
+  .form-kolom > div { 
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);          
+  }    /* label, input, select, textarea */
+}
 label {
   font-size: var(--text-sm);
   font-weight: 600;
@@ -26,4 +63,100 @@ button {
   background: var(--color-primary);
   color: var(--color-surface);
   cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;             /* lebar maksimal agar nyaman dibaca */
+  margin-inline: auto;          /* tengah-tengah horizontal */
+  padding-inline: var(--space-4);
+}
+
+.tabel-wrapper {
+  overflow-x: auto;             /* agar tabel tidak meluber di layar sempit */
+  margin-block: var(--space-4);
+}
+
+tabel {
+  width: 100%;
+  border-collapse: collapse;    /* hilangkan jarak antar sel */
+  background: var(--color-surface);
+}
+
+th, td {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+figure.kartu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;               /* agar foto tidak meluber keluar kartu */
+  height: 100%;                    /* agar kartu sama tinggi di baris yang sama */
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-1);
+  transition: transform 0.3s ease;   /* animasi halus saat hover */
+}
+
+figure.kartu:hover {
+  transform: translateY(-5px);     /* efek naik saat hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bayangan lebih tebal saat hover */
+}
+
+figure.kartu img {
+  width: 100%;
+  aspect-ratio: 16 / 9;             /* agar foto tetap proporsional */
+  object-fit: cover;             /* agar foto memenuhi kotak kartu */
+  object-position: center;        /* agar foto tetap di tengah */
+  border-radius: var(--radius-md) var(--radius-md) 0 0; /* sudut atas membulat, bawah tajam */
+  transition: transform 0.3s ease;   /* animasi halus saat hover */
+}
+
+figure.kartu:hover img {
+  transform: scale(1.05);          /* efek zoom saat hover */
+}
+
+figure.kartu figcaption {
+  padding: var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-fg);
+  flex-grow: 1;                   /* agar figcaption menutup sisa tinggi kartu */
+  display: flex;
+  align-items: center;             /* agar teks rata tengah vertikal */
+  justify-content: center;         /* agar teks rata tengah horizontal */
+  position: relative;               /* agar tombol bisa diposisikan relatif terhadap figcaption */
+  background-color: var(--color-surface);
+  z-index: 1;                       /* agar tombol tetap di atas figcaption */
+}
+
+tombol-tema {
+  position: absolute;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transition: all 0.3s ease;   /* animasi halus saat hover */
+  user-select: none;            /* agar teks tombol tidak bisa diseleksi */
+}
+
+tombol-tema:hover {
+  border-color: var(--color-primary);
+}
+
+:root:has(#tema:checked) .tombol-tema {
+  background-color: var(--color-surface);
+  color: var(--color-fg);
+  border-color: var(--color-primary);
 }

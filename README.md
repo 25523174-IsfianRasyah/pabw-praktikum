@@ -37,5 +37,7 @@ Yogyakarta.jpg
 Yogyakarta 2.jpg
 
 # Catatan Penggunaan AI
-Alhamdulillah saya tidak menggunakan bantuin ai untuk code nya karena sudah tersedia di worksheet tinggal copy dan paste sehingga tidak perlu bantuan ai
+## Deklarasi Penggunaan AI (Pertemuan 8)
+- **Bagian yang dibantu AI:** Konsultasi pembuatan skenario error galat buatan (Lembar E), pembuatan struktur array of objects (`daftarPerjalanan`), dan penyusunan fungsi murni.
+- **Bagian yang dikerjakan sendiri:** Penyusunan identitas profil, penyesuaian data destinasi perjalanan, pengujian pada Console browser, serta pengunggahan file ke repositori Git.
 

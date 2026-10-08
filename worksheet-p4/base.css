@@ -7,12 +7,17 @@
 img { max-width: 100%; height: auto; display: block; }
 html {
   font-size: 100%;            /* ikuti pengaturan pengguna, jangan dipatok */
+  scroll-behavior: smooth;     /* gulir halus saat klik tautan */
+}
+
+section { 
+  scroll-margin-top: 2rem; 
 }
  
 body {
   font-family: system-ui, "Segoe UI", Roboto, sans-serif;
   font-size: var(--text-md);
-  line-height: 1.6;           /* 1.5-1.7 nyaman untuk teks isi */
+  line-height: 1.5;           /* 1.5-1.7 nyaman untuk teks isi */
   color: var(--color-fg);
   background: var(--color-bg);
   padding: var(--space-4);
