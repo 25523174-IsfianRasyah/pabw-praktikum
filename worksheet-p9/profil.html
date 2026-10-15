@@ -35,6 +35,11 @@
   <main class="container">
     <section id="bagian-1">
       <h2>Riwayat Perjalanan</h2>
+      <div id="filter">
+        <button data-category="all" class="active">Semua</button>
+        <button data-category="2022">2022</button>
+        <button data-category="2023">2023</button>
+      </div>
       <!-- tabel Anda nanti di sini (Lembar D) -->
       <div class="tabel-wrapper">
         <table>
@@ -72,6 +77,8 @@
 
       <div class="content-grid" style="margin-top: var(--space-4);">
         <h2>Galeri Foto Perjalanan</h2> 
+        <div id="list" class="content-grid" style="margin-top: var(--space-4);">
+          <!-- konten galeri foto akan diisi oleh JavaScript -->
       <figure class="kartu">
         <img src="Bali.jpg"
           alt="Foto saya sedang berlibur di Bali bersama keluarga"

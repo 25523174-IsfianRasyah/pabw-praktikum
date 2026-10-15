@@ -37,3 +37,26 @@ function render(list) {
 }
 
 render(dataPerjalanan);
+
+const filterRow = document.querySelector("#filter");
+
+function markActiveButton(activeButton) {
+    document.querySelectorAll("#filter button").forEach((button) => {
+        button.classList.toggle("active", button === activeButton);
+    });
+}
+
+filterRow.addEventListener("click", (event) => {
+    const button = event.target.closest("button");
+    if (!button) return;
+    
+    const category = button.dataset.category;
+
+    const selected = dataPerjalanan.filter(
+        (item) => category === "all" || item.tahun === category
+    );
+
+    render(selected);
+
+    markActiveButton(button);
+});
