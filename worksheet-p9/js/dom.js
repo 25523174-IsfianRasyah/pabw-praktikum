@@ -27,9 +27,17 @@ function buildCard(item) {
 }
 
 const container = document.querySelector("#list");
+const emptyMessage = document.querySelector("#pesan-kosong");
 
 function render(list) {
     container.textContent = "";
+
+    if (list.length === 0) {
+        emptyMessage.hidden = false;
+        return;
+    }
+
+    emptyMessage.hidden = true;
 
     list.forEach((item) => {
         container.append(buildCard(item));
@@ -59,4 +67,37 @@ filterRow.addEventListener("click", (event) => {
     render(selected);
 
     markActiveButton(button);
+});
+
+
+
+
+const form = document.querySelector("form");
+const inputs = form.querySelectorAll("input");
+const submitButton = form.querySelector("button[type='submit']");
+
+form.addEventListener("input", () => {
+    let isValid = true;
+
+    inputs.forEach(input => {
+        if (input.value.trim() === "") {
+            isValid = false;
+        }
+    });
+
+    submitButton.disabled = !isValid;
+});
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const firstInvalid = Array.from(inputs).find(input => input.value.trim() === "");
+
+    if (firstInvalid) {
+        firstInvalid.setAttribute("aria-invalid", "true");
+        firstInvalid.focus();
+    } else {
+        alert("Data valid dan tidak ada reload halaman! Siap diproses.");
+        form.reset();
+    }
 });
