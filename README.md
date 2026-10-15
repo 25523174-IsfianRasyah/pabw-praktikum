@@ -41,3 +41,6 @@ Yogyakarta 2.jpg
 - **Bagian yang dibantu AI:** Konsultasi pembuatan skenario error galat buatan (Lembar E), pembuatan struktur array of objects (`daftarPerjalanan`), dan penyusunan fungsi murni.
 - **Bagian yang dikerjakan sendiri:** Penyusunan identitas profil, penyesuaian data destinasi perjalanan, pengujian pada Console browser, serta pengunggahan file ke repositori Git.
 
+## Deklarasi penggunaan AI (Pertemuan 9)
+Pada pertemuan 9 ini, saya dibantu oleh AI untuk mendeteksi masalah (debugging) terkait error variabel yang bernilai null akibat id HTML yang belum ditulis, serta merapikan struktur file dom.js agar terhindar dari duplikasi fungsi render.
+
