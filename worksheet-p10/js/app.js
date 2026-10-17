@@ -27,15 +27,21 @@ const daftarPerjalanan = [
 
 import { fetchNews } from "./api.js";
 
-async function testFetch() {
+const errorText = document.querySelector("#pesan-error");
+async function loadData() {
     try {
+        errorText.hidden = true;
+        
         const data = await fetchNews();
-
-        console.log("Data berhasil diambil:", data)
+        console.log("Data sukses diambil: ", data)
     } catch (error) {
-        console.error("Gagal mengambil data", error)
+        console.error('failed to load', error.message);
+        errorText.textContent = "Gagal memuat data: " + error.message;
+        errorText.hidden = false;
     }
+    
 }
+
 console.log("--- Data Profil & Keahlian ---");
 console.table(profil.keahlian);
 
@@ -58,4 +64,4 @@ const urutanTahun = daftarPerjalanan.sort((a, b) => a.tahun - b.tahun);
 console.log("--- Urutan Perjalanan Berdasarkan Tahun ---");
 console.table(urutanTahun);
 
-testFetch();
+loadData();
