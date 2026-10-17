@@ -41,8 +41,6 @@
         <button data-category="2023">2023</button>
         <button data-category="2024">2024</button>
       </div>
-      <p id="pesan-error" style="color: red;" hidden></p>
-      <p id ="pesan-kosong" hidden>Pencarian tidak ditemukan</p>
       <!-- tabel Anda nanti di sini (Lembar D) -->
       <div class="tabel-wrapper">
         <table>
@@ -80,32 +78,13 @@
 
       <div class="content-grid" style="margin-top: var(--space-4);">
         <h2>Galeri Foto Perjalanan</h2> 
+        <p id="loading" hidden>Memuat data...</p>
+        <p id="pesan-error" style="color: red;" hidden></p>
+        <p id="pesan-kosong" hidden>Pencarian tidak ditemukan</p>
         <div id="list" class="content-grid" style="margin-top: var(--space-4);">
           <!-- konten galeri foto akan diisi oleh JavaScript -->
-      <figure class="kartu">
-        <img src="Bali.jpg"
-          alt="Foto saya sedang berlibur di Bali bersama keluarga"
-          width="400" height="600" loading="lazy">
-          <figcaption>Foto saya sedang berlibur di Bali bersama keluarga</figcaption>
-      </figure>
-      <figure class="kartu">
-        <img src="Yogyakarta.jpg"
-        alt="Foto saya sedang berlibur di Yogyakarta bersama Keluarga"
-        width="400" height="600" loading="lazy">
-        <figcaption>Foto saya sedang berlibur di Yogyakarta bersama Keluarga</figcaption>
-      </figure>
-      <figure class="kartu">
-        <img src="Yogyakarta 2.jpg"
-        alt="Foto saya sedang berlibur di Yogyakarta bersama teman sekolah"
-        width="400" height="600" loading="lazy">
-        <figcaption>Foto saya sedang berlibur di Yogyakarta bersama teman sekolah</figcaption>
-      </figure>
-      <figure class="kartu">
-        <img src="Bali 2.jpg"
-        alt="Foto saya sedang berlibur di Bali bersama Teman Sekolah"
-        width="400" height="600" loading="lazy">
-        <figcaption>Foto saya sedang berlibur di Bali bersama Teman Sekolah</figcaption>
-      </figure>
+        </div>
+      </div>
     </section>
  
     <section id="bagian-2">

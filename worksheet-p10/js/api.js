@@ -9,5 +9,5 @@ export async function fetchNews() {
         throw new Error('status ' + response.status)
     }
 
-    return response.json
+    return response.json();
 }
