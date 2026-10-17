@@ -44,3 +44,12 @@ Yogyakarta 2.jpg
 ## Deklarasi penggunaan AI (Pertemuan 9)
 Pada pertemuan 9 ini, saya dibantu oleh AI untuk mendeteksi masalah (debugging) terkait error variabel yang bernilai null akibat id HTML yang belum ditulis, serta merapikan struktur file dom.js agar terhindar dari duplikasi fungsi render.
 
+ ## Deklarasi Penggunaan AI (Pertemuan 10)
+
+Dalam penyelesaian Worksheet P10 ini, saya memanfaatkan AI (Google Gemini) sebagai rekan diskusi dan asisten *debugging*. Berikut adalah rincian spesifik penggunaannya:
+
+* **Pemahaman Konsep & Alur:** Mendiskusikan implementasi `async/await`, penerapan blok tunggal `try/catch` untuk manajemen *error* asinkron, serta pemetaan 4 kondisi antarmuka (Loading, Success, Failure, Empty).
+* **Debugging DOM Selection:** Menemukan penyebab utama *error* `Cannot set properties of null (setting 'hidden')`, yang ternyata diakibatkan oleh kelebihan karakter tanda pagar (`#`) saat menggunakan fungsi `getElementById` di file `app.js`.
+* **Debugging Silent Failure:** Menelusuri masalah data API yang gagal dirender ke halaman HTML tanpa memunculkan pesan peringatan di *Console*. Masalah ditemukan pada hilangnya sepasang tanda kurung pemanggil fungsi di instruksi `return response.json()` pada file `api.js`.
+
+Seluruh perbaikan dan kode yang didiskusikan bersama AI telah saya pelajari, modifikasi, dan uji coba secara mandiri agar sesuai dengan struktur penyelesaian lembar kerja.
